@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Computer Inventory</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Computer Inventory</h1>
+    <form id="inventory-form">
+      <input type="text" id="name" placeholder="ชื่อเครื่อง/ชิ้นส่วน" required />
+      <input type="text" id="serial" placeholder="Serial Number" required />
+      <input type="number" id="qty" placeholder="จำนวน" min="1" required />
+      <button type="submit">เพิ่มรายการ</button>
+    </form>
+    <table id="inventory-table">
+      <thead>
+        <tr><th>ชื่อ</th><th>Serial</th><th>จำนวน</th><th>จัดการ</th></tr>
+      </thead>
+      <tbody id="inventory-list"></tbody>
+    </table>
+    <div id="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
